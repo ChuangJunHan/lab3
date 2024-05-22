@@ -12,10 +12,12 @@ def bubble_sort(arr, sorting_order):
     # Get number of elements in the list
     n = len(arr_result)
 
-    non_integers = [x for x in arr_result if not isinstance(x, int)]
+    arr_total = sum(arr_result)
 
     if n == 0:
         arr_result = 0
+    elif arr_total%1 != 0:
+        arr_result = 2
     elif n < 10:
         # Traverse through all array elements
         for i in range(n - 1):
@@ -39,8 +41,6 @@ def bubble_sort(arr, sorting_order):
                     arr_result = []
     elif n >= 10:
         arr_result = 1
-    elif non_integers:
-        arr_result = 2
 
     return arr_result
 

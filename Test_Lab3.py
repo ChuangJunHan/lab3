@@ -41,7 +41,7 @@ def test_bubble_sort_zero():
 
 def test_bubble_sort_noninteger():
     result = []
-    input_arr = [64, 34, 25, 12, 'a']
+    input_arr = [64, 34, 25, 12, 22, 11, 1.2]
     test_arr = 2
 
     result = lab3.bubble_sort(input_arr, lab3.SORT_ASCENDING)
